@@ -9,6 +9,8 @@ public class UIHandler : MonoBehaviour
     [SerializeField] private Image[] ColorFields;
     [SerializeField] private TMP_Text[] nameFields;
 
+    [SerializeField] private TMP_Text lastRefresh;
+
     private Color32 Red = new Color32(255,93,93,255);
     private Color32 Green = new Color32(93,255,93,255);
 
@@ -31,15 +33,28 @@ public class UIHandler : MonoBehaviour
             switch (access[i])
             {
                 case "ok":
+                    nameFields[i].text = name[i];
                     break;
 
                 default:
                     ColorFields[i].color = Color.gray;
+                    nameFields[i].text = name[i] + "\n Error: \n" + access[i];
                     break;
             }
+            
+        }
 
-            //Set name field to correct i
-            nameFields[i].text = name[i];
+        //Set current time as last refresh
+        lastRefresh.text = "Last Check: " + System.DateTime.Now.ToShortTimeString();
+
+    }
+
+    public void LoadingData()
+    {
+        for (int i = 0; i < ColorFields.Length; i++)
+        {
+            ColorFields[i].color = Color.grey;
+            nameFields[i].text = "Loading...";
         }
     }
 }

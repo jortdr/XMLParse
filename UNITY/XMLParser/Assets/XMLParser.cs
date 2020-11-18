@@ -21,10 +21,9 @@ public class XMLParser : MonoBehaviour
         LoadFromURL();
 
     }
-
-
     void LoadFromURL()
     {
+        Debug.Log(System.DateTime.Now);
 
 
         //Inspect nodes
@@ -55,6 +54,17 @@ public class XMLParser : MonoBehaviour
         UI.DisplayData(accessesValue, colorsValue, nameValue);
 
     }
+
+
+    public void RefreshButton()
+    {
+        UI.LoadingData();
+        LoadFromURL();
+
+
+    }
 }
+
+
 
 

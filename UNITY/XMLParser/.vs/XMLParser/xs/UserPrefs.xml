@@ -1,26 +1,24 @@
 ﻿<Properties StartupConfiguration="{4FDE63D5-CEE5-2E0D-CE83-B24784757CB2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/XMLParser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UIHandler.cs">
     <Files>
-      <File FileName="Assets/XMLParser.cs" Line="55" Column="63" />
+      <File FileName="Assets/XMLParser.cs" Line="61" Column="26" />
+      <File FileName="Assets/UIHandler.cs" Line="57" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XMLParser" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="XMLParser.cs" selected="True" />
+              <Node name="UIHandler.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9a2f134a-65c5-4374-bae4-aa9f4f45f09a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5efba7d4-9152-4a73-90d9-2c3abf339f70" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
